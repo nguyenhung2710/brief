@@ -1,0 +1,215 @@
+// Mobile
+@media screen and (max-width: 739px) {
+    .navbar {
+        &-collapse {
+            z-index: 1;
+            background-color: #f1f1f1;
+        }
+    }
+
+    .main {
+        .title {
+            font-size: 1.6rem;
+        }
+        &-cmt {
+            img {
+                width: 100%;
+            }
+        }
+        &-slider {
+            .h3bb {
+                padding: 0 10px;
+            }
+        }
+        &-review {
+            margin: 0 5px;
+        }
+        &-photo {
+            &__title {
+                flex-direction: column;
+                a {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+        &-cmt {
+            padding: 0 15px;
+        }
+        &-masonry {
+            padding: 0 15px;
+            &__content {
+                @extend %fix-col;
+                height: 30em;
+            }
+            &__img {
+                @extend %fix-col;
+                padding-left: 0 !important;
+            }
+        }
+        &-info {
+            &__logo {
+                padding-left: 15px !important;
+            }
+        }
+    }
+
+    .header {
+        &-logo {
+            width: 8em;
+        }
+    }
+
+    .thumb {
+        &-img {
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+
+    .column {
+        opacity: 0;
+        display: none;
+    }
+    
+    .next, .prev {
+        width: 14%;
+    }
+    
+    .fa {
+        &-chevron {
+            &-left, &-right {
+                display: block !important;
+                top: -9em;
+                position: absolute;
+                font-size: 3rem;
+            }
+            &-left {
+                left: 0.8em;
+            }
+            &-right {
+                right: 0.8em;
+            }
+            &-up {
+                display: none;
+            }
+            &-down {
+                display: none;
+            }
+        }
+    }
+
+    .numbertext {
+        bottom: 2% !important;
+        font-size: 17px !important;
+    }
+
+    .body {
+        &_review {
+            width: 50% !important;
+        }
+        &_address {
+            margin-top: 10px;
+        }
+        &_ship {
+            flex-wrap: wrap;
+            &--item {
+                span {
+                    &:last-child {
+                        margin-left: 5px !important;
+                        line-height: 32px !important;
+                    }
+                }
+            }
+            &--active {
+                margin-left: 0 !important;
+            }
+        }
+        &_more {
+            flex-direction: column;
+            a {
+                width: 100%;
+                padding-left: 70px;
+            }
+            &--item {
+                span {
+                    &:last-child {
+                        bottom: 3.5em !important;
+                        left: 16.5em !important;
+                    }
+                }
+            }
+        }
+        &_error {
+            font-size: 1.6rem !important;
+            span {
+                img {
+                    width: 9%;
+                }
+            }
+        }
+        
+
+    // .modal {
+    //     &-content {
+    //         width: 100%;
+    //     }
+    // }
+    }
+    .review {
+        &__item {
+            &:first-child {
+                @extend %fix-col;
+            }
+            &-30k {
+                &--img {
+                    text-align: center;
+                }
+            }
+            &-rating {
+                &--star {
+                    &-black {
+                        width: 18%;
+                    }
+                }
+                &--progress {
+                    width: 37%;
+                }
+                &--percent {
+                    width: 19%;
+                }
+                &--bb2 {
+                    width: 22%;
+                }
+            }
+        }
+    }
+    .progress {
+        &-mini {
+            width: 45% !important;
+        }
+    }
+
+    .footer {
+        &__company {
+            &--item {
+                &:last-child {
+                    text-align: center;
+                }
+            }
+        }
+        &__general {
+            flex-direction: column;
+            height: auto !important;
+            padding: 20px 0;
+            span {
+                opacity: 0;
+            }
+        }
+    }
+
+    //Extend
+    %fix-col {
+        max-width: none !important;
+        flex: none !important;
+    }
+}

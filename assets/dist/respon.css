@@ -1,0 +1,153 @@
+@media screen and (max-width: 739px) {
+  .navbar-collapse {
+    z-index: 1;
+    background-color: #f1f1f1;
+  }
+
+  .main .title {
+    font-size: 1.6rem;
+  }
+  .main-cmt img {
+    width: 100%;
+  }
+  .main-slider .h3bb {
+    padding: 0 10px;
+  }
+  .main-review {
+    margin: 0 5px;
+  }
+  .main-photo__title {
+    flex-direction: column;
+  }
+  .main-photo__title a {
+    margin-left: 0 !important;
+  }
+  .main-cmt {
+    padding: 0 15px;
+  }
+  .main-masonry {
+    padding: 0 15px;
+  }
+  .main-masonry__content {
+    height: 30em;
+  }
+  .main-masonry__img {
+    padding-left: 0 !important;
+  }
+  .main-info__logo {
+    padding-left: 15px !important;
+  }
+
+  .header-logo {
+    width: 8em;
+  }
+
+  .thumb-img {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .column {
+    opacity: 0;
+    display: none;
+  }
+
+  .next, .prev {
+    width: 14%;
+  }
+
+  .fa-chevron-left, .fa-chevron-right {
+    display: block !important;
+    top: -9em;
+    position: absolute;
+    font-size: 3rem;
+  }
+  .fa-chevron-left {
+    left: 0.8em;
+  }
+  .fa-chevron-right {
+    right: 0.8em;
+  }
+  .fa-chevron-up {
+    display: none;
+  }
+  .fa-chevron-down {
+    display: none;
+  }
+
+  .numbertext {
+    bottom: 2% !important;
+    font-size: 17px !important;
+  }
+
+  .body_review {
+    width: 50% !important;
+  }
+  .body_address {
+    margin-top: 10px;
+  }
+  .body_ship {
+    flex-wrap: wrap;
+  }
+  .body_ship--item span:last-child {
+    margin-left: 5px !important;
+    line-height: 32px !important;
+  }
+  .body_ship--active {
+    margin-left: 0 !important;
+  }
+  .body_more {
+    flex-direction: column;
+  }
+  .body_more a {
+    width: 100%;
+    padding-left: 70px;
+  }
+  .body_more--item span:last-child {
+    bottom: 3.5em !important;
+    left: 16.5em !important;
+  }
+  .body_error {
+    font-size: 1.6rem !important;
+  }
+  .body_error span img {
+    width: 9%;
+  }
+
+  .review__item-30k--img {
+    text-align: center;
+  }
+  .review__item-rating--star-black {
+    width: 18%;
+  }
+  .review__item-rating--progress {
+    width: 37%;
+  }
+  .review__item-rating--percent {
+    width: 19%;
+  }
+  .review__item-rating--bb2 {
+    width: 22%;
+  }
+
+  .progress-mini {
+    width: 45% !important;
+  }
+
+  .footer__company--item:last-child {
+    text-align: center;
+  }
+  .footer__general {
+    flex-direction: column;
+    height: auto !important;
+    padding: 20px 0;
+  }
+  .footer__general span {
+    opacity: 0;
+  }
+
+  .main-masonry__content, .main-masonry__img, .review__item:first-child {
+    max-width: none !important;
+    flex: none !important;
+  }
+}
