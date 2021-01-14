@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 739px) {
   .navbar-collapse {
     z-index: 1;
@@ -21,6 +22,9 @@
   }
   .main-photo__title a {
     margin-left: 0 !important;
+  }
+  .main-photo__slider #lightgallery a:last-child::before {
+    content: "Xem thêm 5 ảnh" !important;
   }
   .main-cmt {
     padding: 0 15px;
@@ -121,7 +125,7 @@
     width: 18%;
   }
   .review__item-rating--progress {
-    width: 37%;
+    width: 30%;
   }
   .review__item-rating--percent {
     width: 19%;
@@ -144,6 +148,20 @@
   }
   .footer__general span {
     opacity: 0;
+  }
+
+  .slider_item-main li:nth-child(2)::before, .slider_item-main li:nth-child(6)::before {
+    width: 30px !important;
+    height: 30px !important;
+    background-size: 20px !important;
+    top: 60px;
+  }
+
+  #lightgallery {
+    justify-content: center !important;
+  }
+  #lightgallery a:nth-child(1), #lightgallery a:nth-child(2), #lightgallery a:nth-child(3), #lightgallery a:nth-child(4) {
+    display: none;
   }
 
   .main-masonry__content, .main-masonry__img, .review__item:first-child {

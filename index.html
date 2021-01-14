@@ -14,6 +14,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Icon -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <!-- Slider -->
+        <link rel="stylesheet" href="assets/dist/lightslider.min.css">
+        <!-- Gallery -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
         <!-- Css -->
         <link rel="stylesheet" href="assets/dist/main.css">
     </head>
@@ -96,8 +100,8 @@
                             </div> -->
                         </div>
                         <div class="zoom">
-                            <i class="fas fa-search-plus"></i>
-                            <span>Xem ảnh lớn</span>
+                            <!-- <i class="fas fa-search-plus"></i>
+                            <span>Xem ảnh lớn</span> -->
                             <!-- <div id="myModal" class="modal">
                                 <span class="close" onclick="closeModal()">&times;</span>
                                 <div class="modal-content">
@@ -316,7 +320,82 @@
                 </div>
                 <div class="row main-slider">
                     <h3 class="h3bb">Các mẫu quần lót nam tương tự</h3>
-                    <div class="slider_item"></div>
+                    <div class="slider_item">
+                        <ul class="slider_item-main">
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-1.png" alt="slider-1">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-2.png" alt="slider-2">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-3.png" alt="slider-3">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-4.png" alt="slider-4">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-1.png" alt="slider-1">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-2.png" alt="slider-2">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-3.png" alt="slider-3">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="assets/img/slider-4.png" alt="slider-4">
+                                    <div class="slider_item-main--price">
+                                        <span>490.000đ</span>
+                                        <span>755.000đ</span>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
                     <div class="slider_more">
                         <a href="#">Xem tất cả sản phẩm tương tự</a>
                     </div>
@@ -449,7 +528,34 @@
                         <h2 class="h2bb">8 ảnh từ khách hàng</h2>
                         <a href="#">Xem tất cả ảnh</a>
                     </div>
-                    <div class="main-photo__slider"></div>
+                    <div class="main-photo__slider">
+                        <div id="lightgallery" class="">
+                            <a href="assets/img/gallery-1.png">
+                                <img src="assets/img/gallery-1.png">
+                            </a>
+                            <a href="assets/img/gallery-2.png">
+                                <img src="assets/img/gallery-2.png">
+                            </a>
+                            <a href="assets/img/gallery-3.png">
+                                <img src="assets/img/gallery-3.png">
+                            </a>
+                            <a href="assets/img/gallery-4.png">
+                                <img src="assets/img/gallery-4.png">
+                            </a>
+                            <a href="assets/img/gallery-5.png">
+                                <img src="assets/img/gallery-5.png">
+                            </a>
+                            <a href="assets/img/gallery-1.png">
+                                <img src="assets/img/gallery-1.png">
+                            </a>
+                            <a href="assets/img/gallery-2.png">
+                                <img src="assets/img/gallery-2.png">
+                            </a>
+                            <a href="assets/img/gallery-3.png">
+                                <img src="assets/img/gallery-3.png">
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="row main-cmt">
                     <img src="assets/img/cmt.png" alt="cmt">
@@ -523,6 +629,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/js/lightslider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
