@@ -678,23 +678,8 @@ html {
     &_item {
         width: 100%;
         &-main {
-            li {
+            a {
                 position: relative;
-                &::after {
-                    content: "-30%";
-                    position: absolute;
-                    width: 48px;
-                    height: 20px;
-                    top: 10px;
-                    right: 10px;
-                    z-index: 1;
-                    font-size: 1.4rem;
-                    font-weight: 700;
-                    text-align: center;
-                    line-height: 20px;
-                    color: #fff;
-                    background-color: #F44336;
-                }
                 &:nth-child(2), &:nth-child(6) {
                     &::before {
                         content: "";
@@ -711,10 +696,29 @@ html {
                         z-index: 1;
                     }
                 }
-                img {
-                    width: 100%;
+                li {
                     position: relative;
+                    &::after {
+                        content: "-30%";
+                        position: absolute;
+                        width: 48px;
+                        height: 20px;
+                        top: 10px;
+                        right: 10px;
+                        z-index: 1;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        text-align: center;
+                        line-height: 20px;
+                        color: #fff;
+                        background-color: #F44336;
+                    }
                     
+                    img {
+                        width: 100%;
+                        position: relative;
+                        
+                    }
                 }
             }
             &--price {

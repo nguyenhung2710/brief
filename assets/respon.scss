@@ -214,7 +214,7 @@
     .slider {
         &_item {
             &-main {
-                li {
+                a {
                     &:nth-child(2), &:nth-child(6) {
                         &::before {
                             width: 30px !important;
