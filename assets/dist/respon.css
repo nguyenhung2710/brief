@@ -71,14 +71,14 @@
     width: 6% !important;
   }
   .main-content .carousel .slick-prev {
-    top: 53vh !important;
+    top: 42.7rem !important;
     left: 6px;
     transform: rotate(-90deg);
   }
   .main-content .carousel .slick-next {
     transform: rotate(-90deg);
     bottom: -52px !important;
-    left: 43vh;
+    left: 35rem;
   }
   .main-content .carousel-thumb .slick-list .slick-track {
     display: flex;

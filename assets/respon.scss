@@ -109,14 +109,16 @@
                         width: 6% !important;
                     }
                     &-prev {
-                        top: 53vh !important;
+                        // top: 53vh !important;
+                        top: 42.7rem !important;
                         left: 6px;
                         transform: rotate(-90deg);
                     }
                     &-next {
                         transform: rotate(-90deg);
                         bottom: -52px !important;
-                        left: 43vh;
+                        // left: 43vh;
+                        left: 35rem;
                     }
                 }
                 &-thumb {
