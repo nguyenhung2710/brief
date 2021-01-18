@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @media screen and (max-width: 739px) {
+  .nav-item:last-child .nav-link {
+    padding-bottom: 0;
+  }
+
   .navbar-collapse {
     z-index: 1;
     background-color: #f1f1f1;

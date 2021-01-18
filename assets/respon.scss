@@ -1,5 +1,16 @@
 // Mobile
 @media screen and (max-width: 739px) {
+    .nav {
+        &-item {
+            &:last-child {
+                .nav {
+                    &-link {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
     .navbar {
         &-collapse {
             z-index: 1;
