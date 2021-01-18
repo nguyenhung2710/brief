@@ -53,6 +53,22 @@ html {
   bottom: 180px;
   background: url("../icon/next_1.svg") no-repeat;
 }
+.main-content .carousel__item:first-child {
+  position: relative;
+}
+.main-content .carousel__item:first-child::before {
+  content: "";
+  background: url("../img/Boxer.png") no-repeat;
+  background-size: 100px;
+  width: 105px;
+  height: 94px;
+  position: absolute;
+  background-color: #fff;
+  margin: 14px;
+  top: 0;
+  z-index: 1;
+  border: 1px solid var(--main-color);
+}
 .main-content .carousel__item img {
   width: 100%;
   outline: none;
