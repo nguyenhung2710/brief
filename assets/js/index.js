@@ -1,3 +1,5 @@
+lightGallery(document.getElementById('lightgallery'));
+
 $(document).ready(function () {
     // Product
     $('.carousel').slick({
