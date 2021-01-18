@@ -19,11 +19,12 @@
         <!-- Gallery -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
         <!-- Css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <link rel="stylesheet" href="assets/dist/main.css">
     </head>
     <body>
-        <div class="container">
-            <header>
+        <header>
+            <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <a class="navbar-brand" href="#">
                         <img src="assets/img/logo-coolmate.svg" alt="logo" class="header-logo">
@@ -83,118 +84,59 @@
                         </ul>
                     </div>
                 </nav>
-            </header>
-            <div class="main">
-                <div class="title">
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <div class="row main-breadcrumb">
                     <a href="#">Quần lót</a>
                         >
                     <a href="#">Quần Brief Boxer</a>
                 </div>
                 <div class="row main-content">
-                    <div class="col-md-5 product">
-                        <div class="product_boxer">
+                    <div class="col-md-5 carousel">
+                        <!-- <div class="product_boxer">
                             <img id="myImg" src="assets/img/Boxer.png" alt="boxer">
-                            <!-- <div id="myModal" class="modal">
-                                <img class="modal-content" id="img01">
-                                <span class="close">&times;</span>
-                            </div> -->
-                        </div>
-                        <div class="zoom">
-                            <!-- <i class="fas fa-search-plus"></i>
-                            <span>Xem ảnh lớn</span> -->
-                            <!-- <div id="myModal" class="modal">
-                                <span class="close" onclick="closeModal()">&times;</span>
-                                <div class="modal-content">
-                                    <div class="mySlides">
-                                        <div class="numbertext">1 / 4</div>
-                                        <img src="assets/img/image-13.png" style="width:100%">
-                                    </div>
-                                    <div class="mySlides">
-                                        <div class="numbertext">2 / 4</div>
-                                        <img src="assets/img/image-13.png" style="width:100%">
-                                    </div>
-                                    <div class="mySlides">
-                                        <div class="numbertext">3 / 4</div>
-                                        <img src="assets/img/image-13.png" style="width:100%">
-                                    </div>
-                                    <div class="mySlides">
-                                        <div class="numbertext">4 / 4</div>
-                                        <img src="assets/img/image-13.png" style="width:100%">
-                                    </div>
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                    <div class="caption-container">
-                                        <p id="caption"></p>
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo" src="assets/img/image-13.png" onclick="currentSlide(1)" alt="Nature">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo" src="assets/img/image-13.png" onclick="currentSlide(2)" alt="Snow">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo" src="assets/img/image-13.png" onclick="currentSlide(3)" alt="Mountains">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo" src="assets/img/image-13.png" onclick="currentSlide(4)" alt="Lights">
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="mySlides">
-                            <div class="numbertext">1 / 5</div>
+                        </div> -->
+                        <div class="carousel__item">
                             <img src="assets/img/image-37.png">
                         </div>
-                        <div class="mySlides">
-                            <div class="numbertext">2 / 5</div>
+                        <div class="carousel__item">
                             <img src="assets/img/image-13.png">
                         </div>
-                        <div class="mySlides">
-                            <div class="numbertext">3 / 5</div>
+                        <div class="carousel__item">
                             <img src="assets/img/image-13.png">
                         </div>
-                        <div class="mySlides">
-                            <div class="numbertext">4 / 5</div>
+                        <div class="carousel__item">
                             <img src="assets/img/image-13.png">
                         </div>
-                        <div class="mySlides">
-                            <div class="numbertext">5 / 5</div>
+                        <div class="carousel__item">
                             <img src="assets/img/image-13.png">
                         </div>
                     </div>
-                    <div class="col-md-1">
-                        <div class="row thumb-img">
-                            <a class="prev" onclick="plusSlides(-1)">
-                                <i class="fas fa-chevron-up"></i>
-                                <i class="fas fa-chevron-left"></i>
-                            </a>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/img/image-37.png" style="width:100%" onclick="currentSlide(1)"
-                                    alt="boxer red">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/img/image-13.png" style="width:100%" onclick="currentSlide(2)"
-                                    alt="boxer white">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/img/image-13.png" style="width:100%" onclick="currentSlide(3)"
-                                    alt="boxer white ">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/img/image-13.png" style="width:100%" onclick="currentSlide(4)"
-                                    alt="boxer white">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/img/image-13.png" style="width:100%" onclick="currentSlide(5)"
-                                    alt="boxer white">
-                            </div>
-                            <a class="next" onclick="plusSlides(1)">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
+                    <div class="col-md-1 carousel-thumb">
+                        <img class="carousel-thumb__item" src="assets/img/image-37.png" alt="boxer red">
+                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
+                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
+                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
+                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
+                        <!-- <div class="thumb-img__item">
+                            <img class="demo cursor" src="assets/img/image-37.png" alt="boxer red">
                         </div>
+                        <div class="thumb-img__item">
+                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white">
+                        </div>
+                        <div class="thumb-img__item">
+                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white ">
+                        </div>
+                        <div class="thumb-img__item">
+                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white">
+                        </div>
+                        <div class="thumb-img__item">
+                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white">
+                        </div> -->
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 main-content__item">
                         <h1 id="h1bb"><span class="cooler">COOLER</span> 3 quần Brief Boxer vải Bamboo (tre) kháng khuẩn</h1>
                         <p class="body_color">Màu vàng, đen, trắng</p>
                         <div class="body_review">
@@ -318,14 +260,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row main-slider">
+                <div class="row main-carousel">
                     <h3 class="h3bb">Các mẫu quần lót nam tương tự</h3>
-                    <div class="slider_item">
-                        <ul class="slider_item-main">
+                    <div class="carousel__item">
+                        <ul class="carousel__item-main">
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-1.png" alt="slider-1">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -334,7 +276,7 @@
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-2.png" alt="slider-2">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -343,7 +285,7 @@
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-3.png" alt="slider-3">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -352,7 +294,7 @@
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-4.png" alt="slider-4">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -361,7 +303,7 @@
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-1.png" alt="slider-1">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -370,7 +312,7 @@
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-2.png" alt="slider-2">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -379,7 +321,7 @@
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-3.png" alt="slider-3">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -388,7 +330,7 @@
                             <a href="#">
                                 <li>
                                     <img src="assets/img/slider-4.png" alt="slider-4">
-                                    <div class="slider_item-main--price">
+                                    <div class="carousel__item-main--price">
                                         <span>490.000đ</span>
                                         <span>755.000đ</span>
                                     </div>
@@ -396,7 +338,7 @@
                             </a>
                         </ul>
                     </div>
-                    <div class="slider_more">
+                    <div class="carousel_more">
                         <a href="#">Xem tất cả sản phẩm tương tự</a>
                     </div>
                 </div>
@@ -489,7 +431,7 @@
                     <div class="col-md-4 review__item">
                         <p>Theo tiêu chí <strong>từ 5 khách đã mua hàng</strong></p>
                         <ul class="review__item-criteria">
-
+    
                             <li>Vải có mát, thấm hút mồ hôi không?</li>
                             <div class="review__item-criteria--cool">
                                 <a href="#">75% có</a>
@@ -499,7 +441,7 @@
                                 </div>
                                 <a href="#">25% không</a>
                             </div>
-
+    
                             <li>Mặc có thoải mái không?</li>
                             <div class="review__item-criteria--cool">
                                 <a href="#">88% có</a>
@@ -509,7 +451,7 @@
                                 </div>
                                 <a href="#">12% không</a>
                             </div>
-
+    
                             <li>Có giữ dáng sau nhiều lần giặt không?</li>
                             <div class="review__item-criteria--cool">
                                 <a href="#">88% có</a>
@@ -519,7 +461,7 @@
                                 </div>
                                 <a href="#">12% không</a>
                             </div>
-
+    
                         </ul>
                     </div>
                 </div>
@@ -558,7 +500,128 @@
                     </div>
                 </div>
                 <div class="row main-cmt">
-                    <img src="assets/img/cmt.png" alt="cmt">
+                    <!-- <img src="assets/img/cmt.png" alt="cmt"> -->
+                    <div class="cmt-sort">Xếp theo: 
+                        <span class="cmt-sort__active">Đã mua & có hình trước <i class="fas fa-angle-down"></i></span>
+                    </div>
+                    <div class="user-cmt">
+                        <div class="user-cmt__item">
+                            <h4 class="h4bb">Tùng Jacob</h4>
+                            <div class="user-bought">
+                                <img src="assets/icon/check.svg" alt="check">
+                                <span>Đã mua tại Coolmate</span>
+                            </div>
+                            <div class="tag-feature">
+                                <span class="tag-feature__item">Mát, thấm hút mồ hôi</span>
+                                <span class="tag-feature__item">Mặt thoải mái</span>
+                                <span class="tag-feature__item">Giữ dáng khi giặt</span>
+                            </div>
+                        </div>
+                        <div class="user-cmt__item">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span>
+                                Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
+                                hàng đầu tiên này còn được tặng một cái thiệp tốt
+                            </span>
+                        </div>
+                        <div class="user-cmt__item">
+                            <a href="#">Hữu ích</a> •
+                            <a href="#">Trả lời</a> •
+                            <span>Gửi 2 ngày trước</span>
+                        </div>
+                        <div class="admin-cmt">
+                            <h4 class="h4bb">Xuân Lan <span class="badge admin-badge">Admin</span></h4>
+                            <p>Coolmate cảm ơn bạn đã tin dùng các sản phẩm của Coolmate. Hy vọng bạn sẽ có được những
+                                trải nghiệm tuyệt vời với các sản phẩm của chúng tôi và tiếp tục ủng hộ Coolmate trong
+                                thời gian tới. Chúc bạn luôn vui khoẻ</p>
+                            <div class="admin-cmt__item">
+                                <a href="#">Hữu ích</a> •
+                                <a href="#">Trả lời</a> •
+                                <span>Gửi 2 ngày trước</span>
+                            </div>
+                            <div class="admin-cmt__more">
+                                <a href="#">Xem tiếp 3 trả lời <i class="fas fa-sort-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-cmt">
+                        <div class="user-cmt__item">
+                            <h4 class="h4bb">Tùng Jacob</h4>
+                            <div class="user__not-auth">
+                                <span>Chưa xác thực đã mua</span>
+                            </div>
+                            <div class="tag-feature">
+                                <span class="tag-feature__item">Mát, thấm hút mồ hôi</span>
+                                <span class="tag-feature__item">Mặt thoải mái</span>
+                                <span class="tag-feature__item">Giữ dáng khi giặt</span>
+                            </div>
+                        </div>
+                        <div class="user-cmt__item">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span>
+                                Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
+                                hàng đầu tiên này còn được tặng một cái thiệp tốt
+                            </span>
+                        </div>
+                        <div class="user-cmt__item">
+                            <a href="#">Hữu ích</a> •
+                            <a href="#">Trả lời</a> •
+                            <span>Gửi 2 ngày trước</span>
+                        </div>
+                    </div>
+                    <div class="user-cmt">
+                        <div class="user-cmt__item">
+                            <h4 class="h4bb">Tùng Jacob</h4>
+                            <div class="user__not-auth">
+                                <span>Chưa xác thực đã mua</span>
+                            </div>
+                            <div class="tag-feature">
+                                <span class="tag-feature__item">Mát, thấm hút mồ hôi</span>
+                                <span class="tag-feature__item">Mặt thoải mái</span>
+                                <span class="tag-feature__item">Giữ dáng khi giặt</span>
+                            </div>
+                        </div>
+                        <div class="user-cmt__item">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span>
+                                Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
+                                hàng đầu tiên này còn được tặng một cái thiệp tốt
+                            </span>
+                        </div>
+                        <div class="user-cmt__item">
+                            <a href="#">Hữu ích</a> •
+                            <a href="#">Trả lời</a> •
+                            <span>Gửi 2 ngày trước</span>
+                        </div>
+                    </div>
+                    <ul class="pagination pagination-lg num-page">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
                 </div>
                 <div class="row main-masonry">
                     <div class="col-md-4 main-masonry__content">
@@ -601,7 +664,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
         <footer>
             <div class="footer__general">
@@ -612,15 +674,17 @@
                 <a href="#">Góp ý, báo lỗi</a> <span>|</span>
                 <a href="#">Chính sách bảo mật & điều khoản sử dụng</a>
             </div>
-            <div class="container">
-                <div class="row footer__company">
-                    <div class="col-md-6 footer__company--item">
-                        <p>© CÔNG TY CỔ PHẦN FASTECH ASIA</p>
-                        <p>Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư
-                            TP Hà Nội cấp lần đầu ngày 14/08/2018.</p>
-                    </div>
-                    <div class="col-md-6 footer__company--item">
-                        <img src="assets/img/bct.png" alt="bct">
+            <div class="footer__company">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 footer__company--item">
+                            <p>© CÔNG TY CỔ PHẦN FASTECH ASIA</p>
+                            <p>Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư
+                                TP Hà Nội cấp lần đầu ngày 14/08/2018.</p>
+                        </div>
+                        <div class="col-md-6 footer__company--item">
+                            <img src="assets/img/bct.png" alt="bct">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -631,6 +695,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="assets/js/lightslider.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous"></script>
-        <script src="assets/js/main.js"></script>
+        <!-- <script src="assets/js/main.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="assets/js/index.js"></script>
     </body>
 </html>

@@ -3,17 +3,38 @@
   .navbar-collapse {
     z-index: 1;
     background-color: #f1f1f1;
+    margin: auto -25px;
   }
   .navbar_cart {
-    padding: 5px !important;
-    width: 80px !important;
+    padding: 5px 150px !important;
+    width: 100vw !important;
   }
 
   .main .title {
     font-size: 1.6rem;
   }
+  .main-cmt {
+    padding: 0 15px;
+  }
   .main-cmt img {
     width: 100%;
+  }
+  .main-cmt .user-cmt {
+    width: 100% !important;
+  }
+  .main-cmt .user-cmt__item:nth-child(1) {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .main-cmt .user-cmt__item .user-bought img {
+    width: auto;
+  }
+  .main-cmt .user-cmt__item .user__not-auth {
+    margin-bottom: 10px;
+  }
+  .main-cmt .user-cmt__item .tag-feature__item:nth-child(1) {
+    margin-right: 41vw;
+    line-height: 38px;
   }
   .main-slider .h3bb {
     padding: 0 10px;
@@ -30,9 +51,6 @@
   .main-photo__slider #lightgallery a:last-child::before {
     content: "Xem thêm 5 ảnh" !important;
   }
-  .main-cmt {
-    padding: 0 15px;
-  }
   .main-masonry {
     padding: 0 15px;
   }
@@ -44,6 +62,41 @@
   }
   .main-info__logo {
     padding-left: 15px !important;
+  }
+  .main-content__item {
+    padding-left: 15px !important;
+  }
+  .main-content .carousel .slick-prev, .main-content .carousel .slick-next {
+    left: 12px;
+    width: 6% !important;
+  }
+  .main-content .carousel .slick-prev {
+    top: 53vh !important;
+    left: 6px;
+    transform: rotate(-90deg);
+  }
+  .main-content .carousel .slick-next {
+    transform: rotate(-90deg);
+    bottom: -52px !important;
+    left: 43vh;
+  }
+  .main-content .carousel-thumb .slick-list .slick-track {
+    display: flex;
+    width: 20% !important;
+    left: -32vw;
+  }
+  .main-carousel .h3bb {
+    margin: 22px !important;
+  }
+  .main-carousel .carousel__item-main .slick-prev, .main-carousel .carousel__item-main .slick-next {
+    top: 20.7vh !important;
+  }
+  .main-carousel .carousel__item-main a:nth-child(2)::before, .main-carousel .carousel__item-main a:nth-child(6)::before {
+    width: 26px !important;
+    height: 27px !important;
+    background-size: 16px !important;
+    bottom: 64px !important;
+    left: 7px !important;
   }
 
   .header-logo {
@@ -111,12 +164,17 @@
     width: 100%;
     padding-left: 70px;
   }
+  .body_more a:nth-child(2) {
+    padding-left: 0 !important;
+    text-align: center;
+  }
   .body_more--item span:last-child {
-    bottom: 3.5em !important;
+    bottom: 3.9em !important;
     left: 16.5em !important;
   }
   .body_error {
     font-size: 1.6rem !important;
+    margin-left: 0 !important;
   }
   .body_error span img {
     width: 9%;
