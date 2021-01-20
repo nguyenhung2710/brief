@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
         <!-- Css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="assets/dist/star-rating-svg.css">
         <link rel="stylesheet" href="assets/dist/main.css">
     </head>
     <body>
@@ -154,41 +155,70 @@
                             <span><strike>-30%</strike></span>
                         </div>
                         <div class="body_size">
-                            <span>Size: <span>L</span> (dưới 1m65, 50 - 60kg)</span>
+                            <span>Size: 
+                                <span class="main__size">L</span> 
+                                <!-- <span>(dưới 1m65, 50 - 60kg)</span> -->
+                            </span>
                             <span>
                                 <a href="#">Hướng dẫn chọn size</a>
                             </span>
                         </div>
                         <div class="body_size-modified">
-                            <span>M</span>
+                            <!-- <span>M</span>
                             <span class="size_active">L</span>
                             <span>XL</span>
-                            <span>XXL</span>
+                            <span>XXL</span> -->
+                            <form action="" method="get">
+                                <input class="select__size-m" type="button" value="M">
+                                <input class="select__size-l" type="button" value="L">
+                                <input class="select__size-xl" type="button" value="XL">
+                                <input class="select__size-xxl" type="button" value="XXL">
+                            </form>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="body_num-order">
-                                    <p>Chọn số lượng: </p>
-                                    <div class="body_num-order--item">
-                                        <span>-</span>
-                                        <span>1</span>
-                                        <span>+</span>
+                        <div class="body_select">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="body_num-order">
+                                        <p>Chọn số lượng: </p>
+                                        <div class="body_num-order--item">
+                                            <!-- <span>-</span>
+                                            <span>1</span>
+                                            <span>+</span> -->
+                                            <form action="" method="get">
+                                                <input type="button" value="-" class="down-item">
+                                                <input id="value-item" type="text" value="1">
+                                                <input type="button" value="+" class="up-item">
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="body_chat">
+                                        <img src="assets/icon/mess.svg" alt="chat">
+                                        <span>Chat</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="body_address">
+                                        <p>Chọn địa chỉ để biết thời gian nhận hàng:</p>
+                                        <div class="body_address--item">
+                                            <form action="" method="get">
+                                                <input class="address-item__active" type="button" value="TP. HCM">
+                                                <input id="addHn" class="address-item" type="button" value="Hà Nội">
+                                                <input id="addDn" class="address-item" type="button" value="Đà Nẵng">
+                                                <input id="addHcm" class="address-item" type="button" value="TP. HCM">
+                                            </form>
+                                            <span>
+                                                <i class="fas fa-angle-down"></i>
+                                                : Giao hàng trước <strong>14h</strong> hôm nay
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="#" class="body_buy">MUA SIZE L</a> -->
+                                    <div class="body_buy">
+                                        <form action="" method="get">
+                                            <input class="main-size__input" type="submit" value="MUA SIZE L">
+                                        </form>
                                     </div>
                                 </div>
-                                <a href="#" class="body_chat">
-                                    <img src="assets/icon/mess.png" alt="chat">
-                                    <span>Chat</span>
-                                </a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="body_address">
-                                    <p>Chọn địa chỉ để biết thời gian nhận hàng:</p>
-                                    <div class="body_address--item">
-                                        <strong>TP. HCM <i class="fas fa-angle-down"></i> :</strong>
-                                        <span>Giao hàng trước <strong>14h</strong> hôm nay</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="body_buy">MUA SIZE L</a>
                             </div>
                         </div>
                         <div class="body_ship">
@@ -218,6 +248,7 @@
                             </div>
                         </div>
                         <div class="body_info-product">
+                            <!-- Show -->
                             <h5 class="h5bb">Đặc điểm sản phẩm: </h5>
                             <div class="body_info-product--item">
                                 <span>
@@ -243,9 +274,34 @@
                                 </span>
                                 <span>Sản xuất tại Việt Nam</span>
                             </div>
+                            <!-- Hide -->
+                            <div class="body_info-product--item more-info-product">
+                                <span>
+                                    <img src="assets/icon/checked.png" alt="checked">
+                                </span>
+                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
+                            </div>
+                            <div class="body_info-product--item more-info-product">
+                                <span>
+                                    <img src="assets/icon/checked.png" alt="checked">
+                                </span>
+                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
+                            </div>
+                            <div class="body_info-product--item more-info-product">
+                                <span>
+                                    <img src="assets/icon/checked.png" alt="checked">
+                                </span>
+                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
+                            </div>
+                            <div class="body_info-product--item more-info-product">
+                                <span>
+                                    <img src="assets/icon/checked.png" alt="checked">
+                                </span>
+                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
+                            </div>
                         </div>
                         <div class="body_more">
-                            <a href="#" class="body_more--item">
+                            <a class="body_more--item">
                                 <span>Xem thêm điểm nổi bật</span>
                                 <span>
                                     <i class="fas fa-sort-down"></i>
@@ -468,10 +524,11 @@
                 <div class="row main-photo">
                     <div class="main-photo__title">
                         <h2 class="h2bb">8 ảnh từ khách hàng</h2>
-                        <a href="#">Xem tất cả ảnh</a>
+                        <a id="more-img">Xem tất cả ảnh</a>
                     </div>
                     <div class="main-photo__slider">
                         <div id="lightgallery" class="row">
+                            <!-- Show -->
                             <a href="assets/img/gallery-1.png">
                                 <img src="assets/img/gallery-1.png">
                             </a>
@@ -496,11 +553,59 @@
                             <a href="assets/img/gallery-3.png">
                                 <img src="assets/img/gallery-3.png">
                             </a>
+                            <!-- Hide -->
+                            <a class="more-gallery" href="assets/img/gallery-1.png">
+                                <img src="assets/img/gallery-1.png">
+                            </a>
+                            <a class="more-gallery" href="assets/img/gallery-2.png">
+                                <img src="assets/img/gallery-2.png">
+                            </a>
+                            <a class="more-gallery" href="assets/img/gallery-3.png">
+                                <img src="assets/img/gallery-3.png">
+                            </a>
+                            <a class="more-gallery" href="assets/img/gallery-4.png">
+                                <img src="assets/img/gallery-4.png">
+                            </a>
+                            <a class="more-gallery" href="assets/img/gallery-5.png">
+                                <img src="assets/img/gallery-5.png">
+                            </a>
+                            <a class="more-gallery" href="assets/img/gallery-1.png">
+                                <img src="assets/img/gallery-1.png">
+                            </a>
+                            <a class="more-gallery" href="assets/img/gallery-2.png">
+                                <img src="assets/img/gallery-2.png">
+                            </a>
+                            <a class="more-gallery" href="assets/img/gallery-3.png">
+                                <img src="assets/img/gallery-3.png">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="row main-cmt">
-                    <!-- <img src="assets/img/cmt.png" alt="cmt"> -->
+                    <div class="write-cmt">
+                        <button class="write-cmt__bt">Viết đánh giá của bạn <i class="fas fa-edit"></i></button>
+                        <form action="" method="post" class="write-cmt__form">
+                            <div class="write__item">
+                                <label for="fullname">Họ &amp; Tên</label>
+                                <input type="text" placeholder="Nhập họ và tên..." class="" value="" required>
+                            </div>
+                            <div class="write__item">
+                                <label for="fullname">Địa chỉ Email</label>
+                                <input type="email" placeholder="Nhập địa chỉ email" class="" value="" required>
+                            </div>
+                            <div class="write__item">
+                                <label for="rating">Đánh giá</label>
+                                <div class="my-rating"></div>
+                            </div>
+                            <div class="write__item">
+                                <label for="message">Bình luận</label>
+                                <textarea name="message" class="" placeholder="Nhập bình luận của bạn..." required></textarea>
+                            </div>
+                            <div class="write__item">
+                                <button>Gửi đánh giá <i class="fas fa-long-arrow-alt-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
                     <div class="cmt-sort">Xếp theo: 
                         <span class="cmt-sort__active">Đã mua & có hình trước <i class="fas fa-angle-down"></i></span>
                     </div>
@@ -536,6 +641,7 @@
                             <span>Gửi 2 ngày trước</span>
                         </div>
                         <div class="admin-cmt">
+                            <!-- Show -->
                             <h4 class="h4bb">Xuân Lan <span class="badge admin-badge">Admin</span></h4>
                             <p>Coolmate cảm ơn bạn đã tin dùng các sản phẩm của Coolmate. Hy vọng bạn sẽ có được những
                                 trải nghiệm tuyệt vời với các sản phẩm của chúng tôi và tiếp tục ủng hộ Coolmate trong
@@ -546,7 +652,62 @@
                                 <span>Gửi 2 ngày trước</span>
                             </div>
                             <div class="admin-cmt__more">
-                                <a href="#">Xem tiếp 3 trả lời <i class="fas fa-sort-down"></i></a>
+                                <a class="">Xem tiếp 3 trả lời <i class="fas fa-sort-down"></i></a>
+                            </div>
+                            <!-- Hide -->
+                            <div class="user-cmt__item user-cmt_hide">
+                                <h4 class="h4bb">Tùng Jacob</h4>
+                                <div class="user-bought">
+                                    <img src="assets/icon/check.svg" alt="check">
+                                    <span>Đã mua tại Coolmate</span>
+                                </div>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <span>
+                                    Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
+                                    hàng đầu tiên này còn được tặng một cái thiệp tốt
+                                </span>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <a href="#">Hữu ích</a> •
+                                <a href="#">Trả lời</a> •
+                                <span>Gửi 2 ngày trước</span>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <h4 class="h4bb">Tùng Jacob</h4>
+                                <div class="user-bought">
+                                    <img src="assets/icon/check.svg" alt="check">
+                                    <span>Đã mua tại Coolmate</span>
+                                </div>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <span>
+                                    Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
+                                    hàng đầu tiên này còn được tặng một cái thiệp tốt
+                                </span>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <a href="#">Hữu ích</a> •
+                                <a href="#">Trả lời</a> •
+                                <span>Gửi 2 ngày trước</span>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <h4 class="h4bb">Tùng Jacob</h4>
+                                <div class="user-bought">
+                                    <img src="assets/icon/check.svg" alt="check">
+                                    <span>Đã mua tại Coolmate</span>
+                                </div>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <span>
+                                    Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
+                                    hàng đầu tiên này còn được tặng một cái thiệp tốt
+                                </span>
+                            </div>
+                            <div class="user-cmt__item user-cmt_hide">
+                                <a href="#">Hữu ích</a> •
+                                <a href="#">Trả lời</a> •
+                                <span>Gửi 2 ngày trước</span>
                             </div>
                         </div>
                     </div>
@@ -642,7 +803,9 @@
                         <p>GỌI MUA HÀNG, HỖ TRỢ (08:00 - 21:00)</p>
                         <div class="main-info__hotline--item">
                             <img src="assets/icon/phone.svg" alt="phone">
-                            <span>1900.272737</span>
+                            <a href="tel: 1900272737">
+                                <span>1900.272737</span>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-4 main-info__social">
@@ -696,7 +859,9 @@
         <script src="assets/js/lightslider.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous"></script>
         <!-- <script src="assets/js/main.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="assets/js/jquery.star-rating-svg.js"></script>
         <script src="assets/js/index.js"></script>
     </body>
 </html>
