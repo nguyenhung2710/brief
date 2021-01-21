@@ -662,18 +662,18 @@
                         right: -46px !important;
                         width: 6% !important;
                     }
-                    &-prev, {
+                    &-prev {
                         top: -15px !important;
                     }
                 }
                 &-thumb {
                     margin-top: 0 !important;
                 }
-                &__item {
-                    img {
-                        height: 77vh;
-                    }
-                }
+                // &__item {
+                //     img {
+                //         height: 77vh;
+                //     }
+                // }
             }
             &__item {
                 .body {
