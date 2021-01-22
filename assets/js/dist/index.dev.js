@@ -1,7 +1,7 @@
 "use strict";
 
 lightGallery(document.getElementById('lightgallery'));
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   //Change Size 
   $(function () {
     $(".select__size-m").click(function () {
